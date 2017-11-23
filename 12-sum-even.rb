@@ -3,10 +3,12 @@
 i = 1
 total = 0
 
-while ( i <= 100 )
+while ( i <= 5 )
 
   # ....
-
+  if i%2==0
+      total += i
+  end
   i+=1
 end
 

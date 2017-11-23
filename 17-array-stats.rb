@@ -13,8 +13,18 @@ while (true)
 end
 
 puts arr.to_s
+def sum(arr)
+    sum = 0
+    for i in arr
+        sum+=i
+    end
+    return sum
 
-puts "总和是 _____"
-puts "平均是 _____"
+end
+def averge(arr)
+    return  sum(arr)/arr.size
+end
+puts "总和是 __#{sum(arr)}___"
+puts "平均是 ____#{averge(arr)}_"
 puts "最大值是 _____"
 puts "最小值是 _____"

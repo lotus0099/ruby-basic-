@@ -7,10 +7,18 @@ arr = [
   { "name" => "Steven", "age" => 22 },
   { "name" => "Vincent", "age" => 6 },
 ]
-
+def adult(arr)
+    adArr = []
+    arr.each do |a|
+        if a['age'] >=18
+            adArr << a
+        end
+    end
+    return adArr.sort_by{|i| i['age']}.to_s
+end
 # ....
 
-puts "所有成年人，并由小到大: _________"
+puts "所有成年人，并由小到大: #{adult(arr)}"
 
 # 答案应该是
 #[

@@ -18,5 +18,14 @@ print "请输入一个整数z，然后按 Enter: "
 z = gets
 
 # ....
-
-puts "结果是________(A或B或C或D或E)"
+if x.to_i<0
+    puts "结果是 A"
+elsif x.to_i>0&&y.to_i>0&&z.to_i>0
+    puts "结果是 B"
+elsif x.to_i>0&&y.to_i>0&&z.to_i<0
+    puts "结果是 C"
+elsif x.to_i>0&&y.to_i<0&&z.to_i>0
+    puts "结果是 D"
+elsif x.to_i>0&&y.to_i<0&&z.to_i<0
+    puts "结果是 E"
+end

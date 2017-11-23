@@ -10,5 +10,8 @@ print "请输入一个数字z，然后按 Enter: "
 z = gets
 
 # ....
+max = (x.to_i>y.to_i)? x.to_i : y.to_i
+max =(max>z.to_i) ? max : z.to_i
 
-puts "最大的数是 ________(x或y或z)"
+
+puts "最大的数是 __#{max}"

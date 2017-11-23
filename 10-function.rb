@@ -13,7 +13,16 @@ print "请输入一个数字z，然后按 Enter: "
 z = gets
 
 # ....
-
+def find_max(x,y,z)
+max = x.to_i
+if y.to_i>max
+    max = y.to_i
+end
+if z.to_i>max
+    max = z.to_i
+end
+return max
+end
 answer = find_max(x,y,z)
 
 puts "最大的数是 #{answer}"
